@@ -1,11 +1,31 @@
+/* Reset/Default Styles */
+* {
+    outline: 1px solid red;
+}
+:root {
+    --primary-color: #F4F0E5;
+    --secondary-color: #242D4C;
+    --mainfont: 'Space Grotesk', sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--mainfont);
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+/* Header and Navigation */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.2rem 0.8rem;
-    font-family: Bitcount Grid Double;
+    font-family: var(--mainfont);
     font-weight: 400;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 li, a, button {
     text-decoration: none;
@@ -28,5 +48,22 @@ li, a, button {
 }
 .navlinks li a {
     transition: all 0.35s ease 0s;
-    color: black;
+    color: var(--primary-color);
+}
+
+/* Main Content */
+main {
+    padding: 1rem 2rem;
+    font-family: var(--mainfont);
+}
+
+#occupation {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+#caption {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
